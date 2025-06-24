@@ -1,59 +1,52 @@
+````markdown
 # ✈️ RTG (Ready To Go) Travels
 
-**RTG Travels** is a professional online travel booking website designed as a CS350 Web Engineering project. It provides users with detailed destination info, top-rated travel packages, and the ability to book or customize trips—all in one responsive and user-friendly platform.
+**RTG Travels** is an online travel booking website developed as part of the CS350 Web Engineering project. It allows users to explore destinations, book travel packages, and customize trips with ease. The platform ensures a professional, responsive experience with secure backend support.
 
 ## 🌍 Features
 
 - User registration & authentication
-- Book pre-made travel packages or customize your own
-- View team and package details
-- Submit and view reviews (FAQs)
-- Fully responsive layout (Bootstrap 5.2.3)
-- Admin panel to manage assets and content
+- Book pre-defined or custom travel packages
+- Explore travel info and team details
+- Post and view reviews (FAQs)
+- Responsive layout with Bootstrap 5.2.3
 
 ## 🧰 Tech Stack
 
 - **Frontend:** HTML, CSS, Bootstrap 5.2.3
-- **Backend:** PHP, Laravel (v8 or v9)
+- **Backend:** PHP, Laravel 8/9
 - **Database:** MySQL
 
 ## 🗄️ Database Tables
 
-| Table Name | Purpose |
-|------------|---------|
-| `users` | Stores registered user details |
-| `usertrips` | Tracks reservations for display |
-| `team` | Holds team member info shown on site |
-| `reviews` | Stores FAQ-style posts by users |
-| `assets` | Contains image metadata and locations |
+- `users`: Stores registered user details  
+- `usertrips`: Tracks user reservations  
+- `team`: Contains team member info  
+- `reviews`: Holds FAQ-style posts  
+- `assets`: Stores image metadata and paths
 
 ## ⚙️ How to Run
 
-1. **Install XAMPP** (ensure Apache uses port 80, MySQL uses 3306)
-2. Start **Apache** and **MySQL** via XAMPP control panel
-3. Install **Laravel 8 or 9**
-4. Place the project folder (e.g., `new/`) in your web root (e.g., `htdocs/`)
-5. Open terminal and navigate to the project directory:
+1. Download and install **XAMPP** (Apache: port 80, MySQL: port 3306)
+2. Start Apache and MySQL via XAMPP
+3. Install Laravel 8 or 9
+4. Place the project folder (e.g., `new/`) in your preferred directory
+5. Open terminal, navigate to project directory:
    ```bash
    cd path/to/new/
-Import the database:
+````
 
-Open phpMyAdmin (localhost/phpmyadmin)
+6. Open **phpMyAdmin**, create a new database
+7. Run SQL from `sql.txt` (replace image paths as needed)
+8. Run Laravel migration:
 
-Create a new database
+   ```bash
+   php artisan migrate
+   ```
+9. Start the Laravel server:
 
-Paste and run the SQL from sql.txt (📌 Update local image paths if needed)
+   ```bash
+   php artisan serve
+   ```
+10. Open your browser and go to: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
-Run Laravel migration:
-
-bash
-Copy
-Edit
-php artisan migrate
-Start the Laravel development server:
-
-bash
-Copy
-Edit
-php artisan serve
-Open http://127.0.0.1:8000/ in your browser to use the app
