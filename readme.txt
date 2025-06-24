@@ -1,4 +1,4 @@
-````markdown
+
 # ✈️ RTG (Ready To Go) Travels
 
 **RTG Travels** is an online travel booking website developed as part of the CS350 Web Engineering project. It allows users to explore destinations, book travel packages, and customize trips with ease. The platform ensures a professional, responsive experience with secure backend support.
