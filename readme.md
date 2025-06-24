@@ -33,3 +33,16 @@
 5. Open terminal and navigate to the project:
    ```bash
    cd path/to/new/
+6. Open **phpMyAdmin** and create a new database.
+7. Import `sql.txt` into the newly created database.  
+8. Run Laravel migrations:
+   ```bash
+   php artisan migrate
+9. Start the Laravel development server:
+   ```bash
+   php artisan serve
+   ```
+10. Open your browser and go to:
+   [http://127.0.0.1:8000](http://127.0.0.1:8000)
+
+
