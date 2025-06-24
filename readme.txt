@@ -1,30 +1,59 @@
-DESCRIPTION:
-RTG (Ready to Go) Travels is a travel agency devoted to providing the best possible experience to its users. It is an online travel booking website that provides comprehensive information about the   offered destinations, the best itineraries, top-notch amenities, and an unforgettable experience all while giving the users the ability to book tours online without any hassle. For the cs350 Web Engineering project, the aim of the group was to design and build a cutting-edge, professional website for this travel agency. Using this website, the users will be able to sign up, book tours from a list of pre-prepared travel packages or customize a travel package that is tailored to their needs. Moreover, the travelers can explore the website to gain assistance for planning their next trip. The responsive script and layout have been designed through HTML, CSS and Bootstrap v.5.2.3. The server-side programming has been achieved through php and Laravel with the database records stored in a mysql database.
+# ✈️ RTG (Ready To Go) Travels
 
+**RTG Travels** is a professional online travel booking website designed as a CS350 Web Engineering project. It provides users with detailed destination info, top-rated travel packages, and the ability to book or customize trips—all in one responsive and user-friendly platform.
 
-FRAMEWORKS USED:
-	1 -> HTML
-	2 -> CSS
-	3 -> Bootstrap templates
-	4 -> MySQL
-	5 -> PHP
-	6 -> Laravel
+## 🌍 Features
 
-DATABASE TABLES:
-	1 -> Users: Stores the registered user details.
-	2 -> Usertrips: Stores the reservations made by the users to display on reservations page.
-	3 -> Team: Stores the details of the team members displayed on packages page.
-	4 -> Reviews: Stores the faq posts uploaded by the authenticated users.
-	5 -> assets: Stores the images and their respective locations to be fetched.
+- User registration & authentication
+- Book pre-made travel packages or customize your own
+- View team and package details
+- Submit and view reviews (FAQs)
+- Fully responsive layout (Bootstrap 5.2.3)
+- Admin panel to manage assets and content
 
-HOW TO RUN:
-	1 -> Download and install XAMPP, with default ports 80 and 3306 for Apache and mysql respectively.
-	2 -> Run XAMPP's Apache and database services.
-	3 -> Install Laravel 8/9.
-	4 -> Place the 'new' named project in any directory.
-	5 -> Open command prompt and enter the project's directory.
-	6 -> Open PhpMyAdmin on localhost and paste the queries from sql.txt on sql query builder.
-		NOTE -> Replace the local images paths in sql.txt with respective directory you place your project in)
-	7 -> Run the command 'php artisan migrate' to install the database in PhpMyAdmin in localhost.
-	8 -> Run the command 'php artisan serve' to start the project.
-	9 -> Navigate to '127.0.0.1:8000/' in a browser to visit the project.
+## 🧰 Tech Stack
+
+- **Frontend:** HTML, CSS, Bootstrap 5.2.3
+- **Backend:** PHP, Laravel (v8 or v9)
+- **Database:** MySQL
+
+## 🗄️ Database Tables
+
+| Table Name | Purpose |
+|------------|---------|
+| `users` | Stores registered user details |
+| `usertrips` | Tracks reservations for display |
+| `team` | Holds team member info shown on site |
+| `reviews` | Stores FAQ-style posts by users |
+| `assets` | Contains image metadata and locations |
+
+## ⚙️ How to Run
+
+1. **Install XAMPP** (ensure Apache uses port 80, MySQL uses 3306)
+2. Start **Apache** and **MySQL** via XAMPP control panel
+3. Install **Laravel 8 or 9**
+4. Place the project folder (e.g., `new/`) in your web root (e.g., `htdocs/`)
+5. Open terminal and navigate to the project directory:
+   ```bash
+   cd path/to/new/
+Import the database:
+
+Open phpMyAdmin (localhost/phpmyadmin)
+
+Create a new database
+
+Paste and run the SQL from sql.txt (📌 Update local image paths if needed)
+
+Run Laravel migration:
+
+bash
+Copy
+Edit
+php artisan migrate
+Start the Laravel development server:
+
+bash
+Copy
+Edit
+php artisan serve
+Open http://127.0.0.1:8000/ in your browser to use the app
